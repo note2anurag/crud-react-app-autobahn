@@ -33,7 +33,7 @@ const Dashboard = () => {
           variant="h1"
           color="initial"
         >
-          {posts.length >= 1 ? `Total Posts Count - ${posts.length}` : ""}
+          {posts?.length >= 1 ? `Total Posts Count - ${posts.length}` : ""}
         </Typography>
         <AddIcon />
       </Box>

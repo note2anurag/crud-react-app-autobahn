@@ -25,7 +25,7 @@ const AddPostForm = (props) => {
   return (
     <div style={{ width: "360px", margin: "0 auto" }}>
       <form onSubmit={handleSubmit(handlePostAdd)}>
-        <label for="tname">Title:</label>
+        <label htmlFor="tname">Title:</label>
         <br />
         <input
           name="title"
@@ -33,7 +33,7 @@ const AddPostForm = (props) => {
           style={{ width: "250px", height: "20px", fontSize: "14px" }}
         />
         <br />
-        <label for="bname">Content:</label>
+        <label htmlFor="bname">Content:</label>
         <br />
         <textarea
           name="content"
@@ -42,7 +42,7 @@ const AddPostForm = (props) => {
         />
         <br />
         <br />
-        <button style={{ width: "160px", height: "40px", fontSize: "16px" }}>
+        <button style={{ width: "160px", height: "40px", fontSize: "16px" }} data-testid = 'add-button'>
           Add Post
         </button>
       </form>
